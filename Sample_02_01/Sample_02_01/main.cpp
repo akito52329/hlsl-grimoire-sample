@@ -12,6 +12,10 @@ struct SimpleVertex
 void InitRootSignature(RootSignature& rs);
 void InitPipelineState(PipelineState& pipelineState, RootSignature& rs, Shader& vs, Shader& ps);
 
+const unsigned int window_width = 1080;
+const unsigned int window_height = 600;
+
+
 ///////////////////////////////////////////////////////////////////
 // ウィンドウプログラムのメイン関数
 ///////////////////////////////////////////////////////////////////
@@ -37,7 +41,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
     PipelineState pipelineState;
     InitPipelineState(pipelineState, rootSignature, vs, ps);
 
-    float r = (float)1080 / 600;
+    float r = (float)window_width / window_height;
     // 4. 三角形の頂点バッファを作成
     // 頂点配列を定義
     SimpleVertex vertices[] = {
