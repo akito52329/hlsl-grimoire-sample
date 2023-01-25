@@ -61,19 +61,19 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
     SimpleVertex vertices[] = {
     {
         {-0.5f, -0.5f, 0.0f},
-        {1.0f, 1.0f, 1.0f},
+        {0.0f, 0.0f, 0.0f},
     },
     {
         {0.5f, 0.5f, 0.0f},
-        {0.0f, 0.0f, 0.0f},
+        {1.0f, 1.0f, 1.0f},
     },
     {
         {0.5f, -0.5f, 0.0f},
-        {0.0f, 0.0f, 0.0f},
+        {1.0f, 1.0f, 1.0f},
     },
     {
         { -0.5f, 0.5f, 0.0f},
-        {1.0f, 1.0f, 1.0f},
+        {0.0f, 0.0f, 0.0f},
     } 
     };
 
